@@ -27,12 +27,13 @@ import Footer from "~/components/Footer";
 import stylesheet from "~/styles/tailwind.css";
 
 export const links: LinksFunction = () => [
-  { rel: "stylesheet", href: stylesheet },
+  { 
+    rel: "stylesheet", href: stylesheet },
 ];
 
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
-  title: "New Remix App",
+  title: "Hongly DEV",
   viewport: "width=device-width,initial-scale=1",
 });
 
@@ -64,6 +65,7 @@ function App() {
       </head>
       <body className="bg-background text-text-primary dark:bg-d-background dark:text-d-text-primary">
         <div className="flex min-h-screen flex-col">
+      
           <Header />
           <main className="relative mx-auto my-0 box-border flex w-full max-w-7xl flex-[1] flex-grow flex-col py-[1em] px-[2em]">
             <Outlet />

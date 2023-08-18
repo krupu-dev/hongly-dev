@@ -39,6 +39,7 @@ module.exports = {
     fontFamily: {
       serif: ['Merriweather", "serif'],
       sans: ["Fira Sans", "sans-serif"],
+      comfortaa: ['Comfortaa'],
     },
   },
   plugins: [require("@tailwindcss/typography")],

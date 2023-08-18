@@ -20,8 +20,16 @@ const NavLinks = () => {
         Home
       </NavLink>
 
-      <NavLink to="/blog" className={activeStyleCallback}>
-        Blog
+      <NavLink to="/apps" className={activeStyleCallback}>
+        My App
+      </NavLink>
+
+      <NavLink to="/privacy" className={activeStyleCallback}>
+        Privacy Policy
+      </NavLink>
+
+      <NavLink to="/terms" className={activeStyleCallback}>
+        Terms & Conditions
       </NavLink>
     </>
   );
@@ -64,14 +72,26 @@ const Nav = () => {
           >
             <motion.div variants={mobileNavListVariant} {...mobileNavExitProps}>
               <NavLink to="/" className={activeStyleCallback}>
-                Home
+                Overview
               </NavLink>
             </motion.div>
             <motion.div variants={mobileNavListVariant} {...mobileNavExitProps}>
-              <NavLink to="/blog" className={activeStyleCallback}>
-                Blog
+              <NavLink to="/apps" className={activeStyleCallback}>
+                My App
               </NavLink>
             </motion.div>
+            <motion.div variants={mobileNavListVariant} {...mobileNavExitProps}>
+              <NavLink to="/privacy" className={activeStyleCallback}>
+                Privacy Policy
+              </NavLink>
+            </motion.div>
+
+            <motion.div variants={mobileNavListVariant} {...mobileNavExitProps}>
+              <NavLink to="/terms" className={activeStyleCallback}>
+                Terms and Conditions
+              </NavLink>
+            </motion.div>
+
           </motion.div>
         )}
       </AnimatePresence>

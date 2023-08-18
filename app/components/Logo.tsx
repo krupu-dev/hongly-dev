@@ -5,16 +5,17 @@ import { logoRotationVariant } from "~/data/animationConfig";
 export const Logo = () => {
   return (
     <NavLink to="/" className="inline-block">
-      <motion.img
-        alt="Blog Logo"
-        src="/assets/images/logo.webp"
-        className="block w-[75px]"
-        width="75"
-        height="50"
-        variants={logoRotationVariant}
-        animate="rotate"
-        layout="position"
-      />
+      {/* <motion.text
+         tex
+        // src="/assets/images/fa.webp"
+        // className="block w-[60px]"
+        // width="60"
+        // height="45"
+        // variants={logoRotationVariant}
+        // animate="rotate"
+        // layout="position"
+      /> */}
+      <strong className="font-comfortaa">Hongly DEV</strong>
     </NavLink>
   );
 };
